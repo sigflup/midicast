@@ -1,0 +1,36 @@
+.
+.TH "midicast" "1" "November 2024" "midicast 1.0" "User Commands"
+.
+.SH "NAME"
+\fBmidicast
+.
+.SH "SYNOPSIS"
+\fBmidicast\fR [-t] [-d device] [-a listen address] [-p port] [-h]
+.
+.SH "DESCRIPTION"
+\fBmidicast\fR is a program that broadcasts midi device input to connected clients  
+.
+.SH "OPTIONS"
+.
+.TP
+\fB\-t\fR send midi input to midi output, default off
+.
+.TP
+\fB\-d device\fR specify midi device, default /dev/rmidi0
+.
+.TP
+\fB\-a listen address\fR specify address to listen for connections,
+default 127.0.0.1
+.
+.TP
+\fB\-p listen port\fR specify port to listen for connections, default 1337
+.
+.SH
+Example:
+.
+.IP
+midicast \-a 192.168.40.155 \-d /dev/rmidi1
+.
+
+.SH "AUTHOR"
+sigflup synasloble
